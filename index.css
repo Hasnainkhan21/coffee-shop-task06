@@ -7,7 +7,7 @@
     src: url("./fonts/1/JosefinSans-Medium.ttf");
 }
 body{
-    background-image: url(./assets/bc2.jpeg);
+    background-image: url(./assets/background\ \(2\).jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -54,6 +54,28 @@ nav{
     .ancor-tags a{
         padding: 10px 10px;
     }
+    .home-heading{
+        padding: 150px 50px;
+    }
+    .home-heading h1{
+        font-size: 35px;
+    }
+    h1 em{
+        font-size: 50px;
+    }
+    .home-heading burron{
+        padding: 8px;
+        margin-top: 8px;
+    }
+    .home-image img{
+        width: 250px;
+    }
+    @keyframes move{
+        from {right: -20px;}
+        to {right: 60px;}
+    }
+
+    
 }
 
 /* Tabs */
@@ -66,6 +88,34 @@ nav{
         font-size: 2.4vh;
         padding: 5px;
     }
+    /* home */
+    .home-heading{
+        padding: 150px 20px;
+    } 
+    .home-heading h1{
+        font-size: 25px;
+    }
+    h1 em{
+        font-size: 40px;
+    }
+    .home-heading img{
+        width: 15px;
+        padding: 5px;
+    }
+    .home-heading p{
+        font-size: small;
+    }
+    .home-heading button{
+        padding: 5px;
+    }   
+    .home-image img{
+        width: 200px;
+    }
+    @keyframes move{
+        from {right: -5px;}
+        to {right: 5%;}
+    
+}
 }
 
 /* mobiles */
@@ -83,4 +133,74 @@ nav{
         padding: 5px 5px;
         font-size: 1.3vh;
     }
+    /* home */
+    .home-heading{
+        padding: 60px 20px;
+    } 
+    .home-heading h1{
+        font-size: 3vh;
+    }
+    h1 em{
+        font-size: 4vh;
+    }
+    .home-heading img{
+        width: 10px;
+        padding:82px;
+        margin: 8px 0px;
+        margin-bottom: 0px;
+    }
+    .home-heading p{
+        font-size: 1.3vh;
+    }
+    .home-heading button{
+        padding: 2px;
+        margin-left: 5px;
+        font-size: 1.3vh;
+    }
+    @keyframes move{
+        from {right: -5px;}
+        to {right: 5%;}
+    }
+}
+
+
+.home{
+    display: flex;
+    justify-content: space-between;
+}
+.home-heading{
+    padding: 150px 70px;
+    font-size: large;
+    font-family: josefin01;
+}
+.home-heading h1{
+    font-size: 60px;
+}
+h1 em{
+    font-size: 60px;
+    color: brown;
+    font-style: normal;
+}
+.home-heading p{
+    padding: 5px 0px;
+}
+.home-heading button{
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    background: transparent;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.home-image{
+    width: 300px;
+}
+.home-image{
+    position: relative;
+    animation: move 1.5s both;
+}
+@keyframes move{
+    from {right: -50px;}
+    to {right: 120px;}
 }
