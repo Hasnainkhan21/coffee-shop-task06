@@ -8,6 +8,7 @@
 }
 body{
     background-image: url(./assets/background\ \(2\).jpg);
+    /* background-color: black; */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -72,7 +73,7 @@ nav{
     }
     @keyframes move{
         from {right: -20px;}
-        to {right: 60px;}
+        to {right: 40px;}
     }
 
     
@@ -93,6 +94,7 @@ nav{
         padding: 150px 20px;
     } 
     .home-heading h1{
+        padding: 0px 30px 0px 0px;
         font-size: 25px;
     }
     h1 em{
@@ -138,6 +140,7 @@ nav{
         padding: 60px 20px;
     } 
     .home-heading h1{
+        padding: 0px 30px 0px 0px;
         font-size: 3vh;
     }
     h1 em{
@@ -159,7 +162,7 @@ nav{
     }
     @keyframes move{
         from {right: -5px;}
-        to {right: 5%;}
+        to {right: 3%;}
     }
 }
 
@@ -203,4 +206,91 @@ h1 em{
 @keyframes move{
     from {right: -50px;}
     to {right: 120px;}
+}
+
+#heaading h2{
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Coffee Container */
+.coffee-container {
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Coffee Cup Cards */
+.coffee-cup {
+    
+   /* background-image: url(./assets/beans.jpeg); */
+   background: transparent;
+    border-radius: 10px;
+   border: 1px solid wheat;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.coffee-cup img {
+    width: 100%;
+    
+    border-bottom: 2px solid #ddd;
+}
+
+.coffee-cup h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+}
+
+.coffee-cup p {
+    color: #fdfdfd;
+    margin: 0 0 10px;
+    font-size: 1rem;
+}
+
+/* Hover Effect */
+.coffee-cup:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries */
+@media (max-width: 1000px) {
+    .coffee-container {
+        gap: 15px;
+    }
+    .coffee-cup {
+        width: 200px;
+    }
+}
+
+@media (max-width: 780px) {
+    .coffee-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .coffee-cup {
+        margin: 20px;
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .coffee-cup {
+        width: 70%;
+    }
+    .coffee-cup h2 {
+        font-size: 1.2rem;
+    }
+    .coffee-cup p {
+        font-size: 0.9rem;
+    }
 }
