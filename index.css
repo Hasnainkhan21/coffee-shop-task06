@@ -202,6 +202,7 @@ h1 em{
     width: 300px;
 }
 .home-image{
+    margin-top: 105px;
     position: relative;
     animation: move 1.5s both;
 }
@@ -262,6 +263,8 @@ h1 em{
 /* Hover Effect */
 .coffee-cup:hover {
     box-shadow: 0 9px 9px rgb(255, 120, 66);
+    background-color: black;
+    opacity: 90%;
     transform: scale(1.02);
     transition: transform 0.2s ease;;
 }
@@ -338,32 +341,95 @@ h1 em{
         margin: 0 auto;
     }
     .image-text p{
-        padding-top: 20px;
-        font-size: 2.6vh;
-        text-align: justify;
+        padding: 20px 10px 0px 0px;
+        font-size: 1vh;
+        flex-direction: column;
         font-family: Arial, Helvetica, sans-serif;
         margin-right: 0;
-        font-weight: 300;
+        font-weight: 100;
     }
 
 }
 
 /* image text */
-.image-text{
+.container {
     display: flex;
-    justify-content: space-evenly;
+    font-family:cursive;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 40px 40px;
-    margin-top: 30px;
+    padding: 20px;
 }
-.image-text img{
-    width: 350px;
-    margin-right: 40px;
+
+.container img{
+    width: 200px;
+    height: auto;
+    flex: 1;
 }
-.image-text p{
-    color: rgb(255, 62, 62);
-    font-size: x-large;
-    font-weight: 500;
-    margin-right: 30px;
-    text-align: justify;
+
+.text {
+    font-size: 25px;
+     color: rgb(255, 250, 250);
+    flex: 2;
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .text {
+        margin-left: 0;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}
+.cold-cofe-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 90px;
+    margin-top: 60px;
+}
+.cold-cofe-container .cofe-cup{
+    width: 220px;
+    height: 260px;
+    border-radius: 10px;
+    border: 5px solid white;
+    text-align: center;
+    transition: transform 0.2s ease-in 0.09s;
+    background-color: rgb(218, 102, 56);
+}
+.cofe-cup:hover{
+    transform: translateY(-10px);
+}
+.cofe-cup img{
+    padding: 30px 0;
+    width: 100px;
+    height: 150px;
+}
+.cold-cofe-container .text-body{
+    color: rgb(172, 76, 76);
+    background-color: white;
+    padding: 15px;
+}
+.cold-cofe-container .text-body h4{
+    font-size: 3vh;
+}
+@media (max-width: 1100px) {
+    .cold-cofe-container{
+       flex-direction: row;
+
+        gap: 100px;
+    }
+    .cofe-cup {
+
+        width: 50%;
+        height: 50px;
+    }
+    
+    .cofe-cup  h4{
+        font-size: 2.2vh;
+    }
 }
