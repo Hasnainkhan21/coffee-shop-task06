@@ -64,7 +64,7 @@ nav{
     h1 em{
         font-size: 50px;
     }
-    .home-heading burron{
+    .home-heading{
         padding: 8px;
         margin-top: 8px;
     }
@@ -146,8 +146,8 @@ nav{
     h1 em{
         font-size: 4vh;
     }
-    .home-heading img{
-        width: 10px;
+    .home-heading .home-img{
+        
         padding:82px;
         margin: 8px 0px;
         margin-bottom: 0px;
@@ -202,12 +202,12 @@ h1 em{
     width: 300px;
 }
 .home-image{
-    margin-top: 105px;
+    margin-top: 80px;
     position: relative;
-    animation: move 1.5s both;
+    animation: move 1.7s both;
 }
 @keyframes move{
-    from {right: -50px;}
+    from {right: -30px;}
     to {right: 120px;}
 }
 
@@ -275,7 +275,7 @@ h1 em{
         gap: 70px;
     }
     .coffee-cup {
-        width: 170px;
+        width: 30%;
     }
     .image-text{
         padding: 40px 10px;
@@ -299,7 +299,7 @@ h1 em{
     }
     .coffee-cup {
         margin: 20px;
-        width: 60%;
+        width: 50%;
     }
     .image-text{
         padding: 40px 0px;
@@ -432,4 +432,108 @@ h1 em{
     .cofe-cup  h4{
         font-size: 2.2vh;
     }
+}
+/* Beans */
+.beans-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.beans-container div{
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    transition: transform 0.2s ease;;
+   }
+.beans-container img{
+    position: relative;
+    top: -130px;
+    width: 185px;
+}
+.beans-container p{
+    margin-top: -150px;
+}
+.beans-container div:hover {
+    box-shadow: 2px 2px 10px 10px rgb(255, 255, 255);
+    background-color: rgb(195, 118, 59);
+    opacity: 90%;
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+}
+@media(max-width: 1000px){
+    .beans-container{
+        display: grid;
+        grid-template-columns: 30% 30%;
+        justify-content: center;
+        align-items: center;
+        gap: 95px;
+    }
+    .beans-container div{
+        width: 250px;
+        height: 250px;
+    }
+    .beans-container img{
+        position: relative;
+        top: -150px;
+        width: 240px;
+    }
+    .beans-container p{
+        margin-top: -180px;
+        font-size: 25px;
+    }
+}
+@media(max-width: 780px){
+    .beans-container{
+        display: grid;
+        grid-template-columns: 30% 30%;
+    }
+    .beans-container div{
+        width: 220px;
+        height: 220px;
+    }
+    .beans-container img{
+        position: relative;
+        top: -150px;
+    }
+    .beans-container p{
+        margin-top: -180px;
+        font-size: 15px;
+    }
+
+}
+@media(max-width: 420px){
+    .beans-container{
+        display: grid;
+        grid-template-columns: 70%;
+        justify-content: center;
+        align-items: center;
+        gap: 110px;
+        margin-top: 30px;
+    }
+    .beans-container div{
+        width: 250px;
+        height: 250px;
+    }
+    .beans-container img{
+        position: relative;
+        top: -150px;
+        width: 240px;
+    }
+    .beans-container p{
+        margin-top: -180px;
+        font-size: 20px;
+    }
+    #Heading{
+        font-size: 15px;
+    }
+}
+#Heading{
+    color: brown;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-decoration: underline;
+    font-size: 30px;
 }
