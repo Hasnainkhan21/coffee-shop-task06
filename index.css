@@ -111,8 +111,9 @@ nav{
         padding: 5px;
     }   
     .home-image img{
-        margin-top: 87px;
-        width: 140px;
+        margin-left: -11px;
+        margin-top: 62px;
+        width: 150px;
     }
     @keyframes move{
         from {right: -5px;}
@@ -515,6 +516,7 @@ h1 em{
         margin-top: 30px;
     }
     .beans-container div{
+        margin: auto;
         width: 250px;
         height: 250px;
     }
